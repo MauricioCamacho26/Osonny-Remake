@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css/configM1re.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="indexM1.html">Menu Principal</a>
+    </div>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        <form action="registro.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contrasena:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <p>Tipo de Usuario:</p>
+            <div class="user-type">
+                <label>
+                    <input type="radio" name="tipo_usuario" value="cliente" required>
+                    <span>Cliente</span>
+                </label>
+                <label>
+                    <input type="radio" name="tipo_usuario" value="restaurante">
+                    <span>Restaurante</span>
+                </label>
+                <label>
+                    <input type="radio" name="tipo_usuario" value="repartidor">
+                    <span>Repartidor</span>
+                </label>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
